@@ -46,7 +46,7 @@ export function CertificateViewer({ certificate, open, onOpenChange }: Props) {
           ) : (
             <div className="w-full h-full flex items-center justify-center p-4 overflow-auto">
               <img
-                src={certificate.url}
+                src={certificate.thumbnailUrl?.replace("w800", "w4000") || certificate.url}
                 alt={certificate.name}
                 className="max-w-full max-h-full object-contain"
               />
