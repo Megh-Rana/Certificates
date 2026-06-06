@@ -14,7 +14,7 @@ export function CertificateViewer({ certificate, open, onOpenChange }: Props) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-5xl w-[95vw] h-[90vh] flex flex-col p-0 gap-0">
+      <DialogContent className="max-w-[95vw] w-[95vw] h-[90vh] flex flex-col p-0 gap-0">
         <DialogHeader className="p-4 border-b flex-row items-center justify-between space-y-0">
           <div className="min-w-0 flex-1">
             <DialogTitle className="truncate">{certificate.name}</DialogTitle>
